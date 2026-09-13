@@ -35,6 +35,24 @@
  <section class="header">
     <header>
       <a href="/" class="logo"><img src="images/logo-rain-city-rinse.png"></a>
+      <!-- Fully functioning HTML structure for Netlify Forms -->
+<form name="contact" method="POST" data-netlify="true">
+  <!-- Hidden input required for JavaScript frameworks (React, Next.js, Vue) -->
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <p>
+    <label>Your Name: <input type="text" name="name" required /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" required /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message" required></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
     </header>
 
   <div id="footer"></div>
