@@ -96,7 +96,7 @@ hr{
 }
 
 .feature{
-    display: flex;
+    display: none;
 }
 
 .feature .img1{
