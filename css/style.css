@@ -3,10 +3,6 @@ body{
     padding: 0;
     }
 
-.nl-badge, .nl-wrap{
-    display: none !important;
-}
-
 /*nav*/
 .logo img{
     width: 120px;
