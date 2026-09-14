@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="We help small businesses and entrepreneurs grow with custom websites, graphic design, and social media marketing posts. Whether it’s building a new website or creating engaging content, we’re here to bring your vision to life. Let’s grow together!">
   <meta name="google-site-verification" content="YwrHrMX7VgRoDCfpdjA0EKRAnKj3-tKDuN-rG2FmvME" />
-  <title>Rain City Rinse</title>
+  <title>Journey&Co</title>
   <link rel="icon" type="image/x-icon" href="img/journey_co.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <script src="js/main.js" defer=""></script>
   <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=02739458"></script>
+  <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 
 </head>
   <!-- Google tag (gtag.js) -->
@@ -30,37 +32,73 @@
   gtag('config', 'G-DETVPWEV6G');
 </script>
 
-<body>
+<body class="rain">
 
- <section class="header">
+  <section class="header">
     <header>
       <a href="/" class="logo"><img src="images/logo-rain-city-rinse.png"></a>
-      <!-- Fully functioning HTML structure for Netlify Forms -->
-
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-      
+      <nav>
+         <ul>
+              <!--
+                <li class="h"><a href="" style="font-weight: 500;">Our Services</a></li>
+                <li class="h"><a href="" style="font-weight: 500;">How It Work</a></li>
+                <li class="h"><a href="" style="font-weight: 500;">Contact Us</a></li>-->
+                <li class="h">Send us a message. Get your free quote!</li>
+                <li><a href="https://maps.app.goo.gl/9JLEcj7j4iGqJ3zA7" target="_blank"><ion-icon name="logo-google"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61593359715463" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+         </ul>
+      </nav>
     </header>
 
-  <div id="footer"></div>
+    <main>
+      <div class="title_header">
+      <h4 style="color: #fff; margin-bottom: -10px;">Looking to freshen up your home’s exterior?</h4>
+      <h1>Professional Pressure Washing in Vancouver</h1>
+      
+      <p style="color: #fff;">Restore the look of your home or property with professional exterior cleaning from Rain City Rinse. Driveways, patios, decks, siding, walkways and more.</p>
+      <hr>
+      <div class="feature">
+       <img src="images/best-price-guarantee.png" alt="Pressure Washing Services Best Price Guarantee"class="img1">
+       <img src="images/customer-satisfaction.png" alt="Trusted by Client across Vancouver"class="img2">
+      </div>
+      </div>
+
+      <div class="form">
+      <h3 style="text-align: center;">Get a Free Quote</h3>
+
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="space">
+          <label>Your Name:<br> 
+            <input type="text" name="name"/></label>
+          </div>
+        <div class="space">
+          <label>Your Email:<br>
+            <input type="email" name="email" /></label>
+          </div>
+        <!--
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        -->
+        <div class="space">
+          <label>Message:<br> 
+            <textarea name="message"></textarea></label>
+          </div>
+        <div class="space">
+          <button type="submit">Get a Free Quote</button>
+        </div>
+      </form>
+         
+      </div>
+    </main>
+  </section>
+
+  <section class="services">
+    <div></div>
+  </section>
 
   <script src="script.js"></script>
 
