@@ -195,18 +195,18 @@ button{
         }
 
        .feature{
-        display: none;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .feature .img1{
-        width: 37%;
+        width: 60%;
         height: 100%;
     }
     
     .feature .img2{
-        width: 51%;
-        height: 100%;
+        display: none;
+       /* width: 51%;
+        height: 100%;*/
     }
        
        .form{
