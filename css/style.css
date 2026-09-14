@@ -1,17 +1,212 @@
 body{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    }
+    
+/*nav*/
+.logo img{
+    width: 120px;
 }
 
-h1{
-  font-family: "Montserrat", Sans-serif;
-  font-size: 60px;
-  font-weight: 600;
+header{
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a, li{
+    font-size: 18px;
+    font-family: "Montserrat", Sans-serif;
+    /*text-transform: uppercase;*/
+    height: 100%;
+    margin-left: 1rem;
+    text-decoration: none;
+    color:  #fff;
+    font-weight: 500;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+/*nav*/
+
+    h1{
+      font-family: "Montserrat", Sans-serif;
+      font-size: 60px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    h2{
+        font-family: "Montserrat", Sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+    h3{
+        font-family: "Montserrat", Sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #8D191B;
+      }
+
+      h4{
+        font-family: "Montserrat", Sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        /*letter-spacing: 1px;*/
+      }
+
+    p{
+        font-family: "Inter", Sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
+
+    ion-icon {
+        font-size: 30px;
+      }
+    
+    .header{
+        padding: 20px 80px 100px 80px;
+        background: url(../images/raincityrinse-pressure-washing.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+.title_header{
+ width: 65%;
+ padding-right: 80px;
+}
+
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.feature{
+    display: flex;
+}
+
+.feature .img1{
+    width: 32%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.feature .img2{
+    width: 48%;
+    height: 100%;
+}
+
+.form{
+    width: 35%;
+    background: rgb(255, 255, 255, .8);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.space{
+    margin-top: 30px;
+}
+
+label{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;  
+}
+
+input{
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+textarea{
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+}
+
+button{
+    text-align: center;
+    background-color: #8D191B;
+    border: none;
+    padding: 20px 30px;
+    color: #F9E4C0;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px; 
+    text-transform: uppercase;
+    width: 100%;
 }
 
 
-@media screen and (max-width: 600px) {
- h1{
-  font-size: 34px;
-}
-}
+    main{
+        display: flex;
+        margin-top: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+     h1{
+      font-size: 34px;
+    }
+
+    h2{
+        font-size: 26px;
+      }
+
+    .header{
+        padding: 20px 20px 40px 20px;
+    }
+
+    .logo img{
+        width: 100px;
+        text-align: center;
+        }
+
+    .h{
+        display: none;
+    }
+
+    main{
+        display: block;
+        margin-top: 30px;
+    }
+
+    .title_header{
+        width: 100%;
+        padding-right: 0;
+       }
+
+       .feature{
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .feature .img1{
+        width: 37%;
+        height: 100%;
+    }
+    
+    .feature .img2{
+        width: 51%;
+        height: 100%;
+    }
+       
+       .form{
+           width: 80%;
+           margin-top: 20px;
+       }
+    }
