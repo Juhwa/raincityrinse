@@ -96,7 +96,7 @@ hr{
 }
 
 .feature{
-    display: none;
+    display: flex;
 }
 
 .feature .img1{
@@ -191,7 +191,7 @@ button{
        }
 
        .feature{
-        display: flex;
+        display: none;
         margin-top: 30px;
     }
 
