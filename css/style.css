@@ -210,7 +210,8 @@ button{
     }
        
        .form{
-           width: 80%;
+           width: 75%;
            margin-top: 20px;
+           padding: 20px 20px
        }
     }
