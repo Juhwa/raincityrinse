@@ -62,9 +62,9 @@
       <a href="/" class="logo"><img src="images/logo-rain-city-rinse.png"></a>
       <nav>
          <ul>
-              <!--
-                <li class="h"><a href="" style="font-weight: 500;">Our Services</a></li>
-                <li class="h"><a href="" style="font-weight: 500;">How It Work</a></li>
+             <!--
+                <li class="h"><a href="#s" style="font-weight: 500;">Our Services</a></li>
+                 <li class="h"><a href="" style="font-weight: 500;">How It Work</a></li>
                 <li class="h"><a href="" style="font-weight: 500;">Contact Us</a></li>-->
                 <li class="h">Send us a message. Get your free quote!</li>
                 <li><a href="https://maps.app.goo.gl/9JLEcj7j4iGqJ3zA7" target="_blank"><ion-icon name="logo-google"></ion-icon></a></li>
@@ -119,8 +119,232 @@
     </main>
   </section>
 
+
+
+<section class="rcr-reviews">
+  <div class="rcr-reviews-container">
+
+    <div class="rcr-reviews-header">
+      <!--<span class="rcr-reviews-label">CUSTOMER REVIEWS</span>-->
+      <h2>What Our Customers Say</h2>
+      <p>Real results from customers who trusted Rain City Rinse.</p>
+    </div>
+
+
+    <div class="rcr-review-slider">
+
+      <!-- Review Card 1 -->
+      <div class="rcr-review-card active">
+        <div class="rcr-stars">★★★★★</div>
+
+        <h3>Highly Recommend Rain City Rinse</h3>
+
+        <p>
+          “Highly recommend Rain City Rinse! They did an amazing job and didn't miss a single spot. The team was super professional, arrived right on time, and left everything looking brand new. It’s hard to find reliable service like this these days. Will absolutely be using them again”
+        </p>
+
+        <div class="rcr-review-author">
+          <div class="rcr-avatar">T</div>
+          <div>
+            <strong>The Binge</strong>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Review Card 2 -->
+      <div class="rcr-review-card active">
+        <div class="rcr-stars">★★★★★</div>
+
+        <h3>Beyond My Expectations</h3>
+
+        <p>
+          “Unbelievable work, got it cleaner than I ever thought possible, thank you”
+        </p>
+
+        <div class="rcr-review-author">
+          <div class="rcr-avatar">B</div>
+          <div>
+            <strong>Brandon Cowie</strong>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Review Card 3 -->
+      <div class="rcr-review-card">
+        <div class="rcr-stars">★★★★★</div>
+
+        <h3>Highly Recommend Rain City Rinse</h3>
+
+        <p>
+          “Highly recommend Rain City Rinse! They did an amazing job and didn't miss a single spot. The team was super professional, arrived right on time, and left everything looking brand new. It’s hard to find reliable service like this these days. Will absolutely be using them again”
+        </p>
+
+        <div class="rcr-review-author">
+          <div class="rcr-avatar">S</div>
+          <div>
+            <strong>The Binge</strong>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Review Card 4 -->
+      <div class="rcr-review-card">
+        <div class="rcr-stars">★★★★★</div>
+
+        <h3>Beyond My Expectations</h3>
+
+        <p>
+          “Unbelievable work, got it cleaner than I ever thought possible, thank you”
+        </p>
+
+        <div class="rcr-review-author">
+          <div class="rcr-avatar">M</div>
+          <div>
+            <strong>Brandon Cowie</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <div class="rcr-review-navigation">
+
+      <!--<button class="rcr-arrow" onclick="rcrPrevious()">
+        &#10094;
+      </button>-->
+
+      <div class="rcr-dots">
+        <button class="rcr-dot active" onclick="rcrGoTo(0)"></button>
+        <button class="rcr-dot" onclick="rcrGoTo(1)"></button>
+      </div>
+
+      <!--<button class="rcr-arrow" onclick="rcrNext()">
+        &#10095;
+      </button>-->
+
+    </div>
+
+  </div>
+</section>
+
+
+<script>
+
+const rcrReviews = document.querySelectorAll(".rcr-review-card");
+const rcrDots = document.querySelectorAll(".rcr-dot");
+
+let rcrPage = 0;
+
+
+/* Show two reviews at a time */
+
+function rcrShowPage(page) {
+
+  const totalPages = Math.ceil(rcrReviews.length / 2);
+
+  if (page < 0) {
+    rcrPage = totalPages - 1;
+  }
+
+  if (page >= totalPages) {
+    rcrPage = 0;
+  }
+
+  rcrReviews.forEach((review, index) => {
+
+    review.classList.remove("active");
+
+    const start = rcrPage * 2;
+
+    if (index === start || index === start + 1) {
+      review.classList.add("active");
+    }
+
+  });
+
+
+  rcrDots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === rcrPage);
+  });
+
+}
+
+
+/* Previous */
+
+function rcrPrevious() {
+
+  rcrPage--;
+  rcrShowPage(rcrPage);
+
+}
+
+
+/* Next */
+
+function rcrNext() {
+
+  rcrPage++;
+  rcrShowPage(rcrPage);
+
+}
+
+
+/* Dot navigation */
+
+function rcrGoTo(page) {
+
+  rcrPage = page;
+  rcrShowPage(rcrPage);
+
+}
+
+</script>
+
+
   <section class="services">
-    <div></div>
+    <div id="s">
+      <h2>Pressure Washing Services</h2>
+      <p>From dirty driveways to tired-looking patios, Rain City Rinse helps restore the appearance of residential and commercial properties with professional exterior cleaning.</p>
+    </div>
+    <div class="service-card">
+      <div class="card-bg">
+        <h3>House Washing</h3>
+        <p>Remove dirt, grime, algae and buildup from your home's exterior and give it a cleaner, fresher appearance.</p>
+      </div>
+      <div class="card-bg">
+        <h3>Driveway & Concrete Cleaning</h3>
+        <p>Restore the appearance of driveways, sidewalks, walkways and other concrete surfaces.</p>
+      </div>
+    </div>
+
+    <div class="service-card2">
+      <div class="card-bg">
+        <h3>Patio & Deck Cleaning</h3>
+        <p>Remove dirt, moss, algae and buildup from outdoor living spaces so they're ready to enjoy again.</p>
+      </div>
+      <div class="card-bg">
+        <h3>Exterior Surface Cleaning</h3>
+        <p>Professional cleaning for siding, walkways, fences and other exterior surfaces.</p>
+      </div>
+    </div>
+    
+    <div class="service-card2">
+      <div class="card-bg">
+        <h3>Commercial Pressure Washing</h3>
+        <p>Keep storefronts, buildings, sidewalks and commercial properties looking clean and professional.</p>
+      </div>
+      <div class="card-bg">
+        <h3>Custom Cleaning</h3>
+        <p>Have a surface that needs attention? Contact us and we'll help determine the right cleaning solution.</p>
+      </div>
+    </div>
+
   </section>
 
   <script src="script.js"></script>
