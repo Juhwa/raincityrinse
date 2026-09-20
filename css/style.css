@@ -74,6 +74,24 @@ nav ul{
     ion-icon {
         font-size: 30px;
       }
+
+    .c{
+      text-align: center;
+      margin-top: 70px;
+    }
+    .btn{
+      padding: 15px 25px;
+      background-color: #8D191B;
+      color: #fff;
+      font-family: "Montserrat", Sans-serif;
+      font-size: 18px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .btn:hover{
+      background-color: #6f1214;
+    }
     
     .header{
         padding: 20px 80px 100px 80px;
