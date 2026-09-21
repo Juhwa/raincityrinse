@@ -157,6 +157,14 @@ input{
   height: 40px;
 }
 
+select{
+  width: 100%;
+}
+option{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;  
+}
+
 textarea{
   border: none;
   margin-top: 10px;
@@ -454,6 +462,51 @@ width: 100%;
 }
 /*areas*/
 
+/*faq*/
+.faq{
+  padding: 100px 200px;
+  text-align: left;
+  }
+
+  .faq div{
+    padding-top: 10px;
+    }
+/*faq*/
+
+/*footer*/
+footer{
+  background-color: #2d0505;
+  width: 100%;
+  padding: 60px 80px;
+}
+
+footer div{
+  display: flex;
+ /*justify-content: space-between;*/
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  align-items: center;
+}
+
+li {
+  float: left;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+/*footer*/
+
 @media (max-width: 700px) {
 
   .rcr-reviews {
@@ -576,4 +629,15 @@ width: 100%;
       .areas div{
         padding: 100px 20px;
       }
+
+      .faq{
+        padding: 50px 20px;
+        }
+
+        .faq div{
+          padding-top: 5px;
+          }
+          footer{
+            padding: 40px 20px;
+          }
   }
